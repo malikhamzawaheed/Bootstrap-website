@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h1 class="navbar-brand">E-commerce Store</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2 mt-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success mt-2" type="submit">Search</button>
+    </form>
+    
+    <button class="btn btn-outline-light mt-2 ms-2" type="button">
+      <i class="bi bi-cart-fill"></i>
+    </button>
+  </nav>
+  
+<div class="container-fluid p-0">
+    <img src="Banner.jpg" class="img-fluid w-100" alt="Banner Image">
+  </div>
+  
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (2).jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">RS. 1000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (2).jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">RS. 1000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images (2).jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">RS. 1000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModal1Label">Product 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images (2).jpg" class="img-fluid mb-3" alt="Product 1">
+          <h6>Price: RS. 1000</h6>
+          <p>It is high-quality and worth buying!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModal2Label">Product 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images (2).jpg" class="img-fluid mb-3" alt="Product 2">
+          <h6>Price: RS. 1000</h6>
+          <p>It is stylish and affordable!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModal3Label">Product 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images (2).jpg" class="img-fluid mb-3" alt="Product 3">
+          <h6>Price: RS. 1000</h6>
+          <p>It’s premium and valuable!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="py-5 bg-dark">
+      <div class="container text-center">
+          <h2 class="mb-4 text-white">About Us</h2>
+          <p class="text-white">We are a team of passionate individuals who aim to provide high-quality products and services to our customers. Our goal is to bring satisfaction and happiness to your shopping experience.</p>
+      </div>
+  </section>
+
+  <section class="py-5 bg-secondary">
+      <div class="container">
+          <h2 class="text-center mb-2 text-white">Contact Us</h2>
+          <form>
+              <div class="mb-2">
+                  <label for="name" class="form-label text-white">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-2">
+                  <label for="email" class="form-label text-white">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-2">
+                  <label for="message" class="form-label text-white">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark text-white">Send Message</button>
+          </form>
+      </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
